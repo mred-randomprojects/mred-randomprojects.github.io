@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>mred-randomprojects</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛠️</text></svg>" />
+  <style>
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Inter", system-ui, -apple-system, sans-serif;
+      background: hsl(240, 15%, 4%);
+      color: hsl(0, 0%, 88%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: hsl(152, 76%, 42%);
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      color: hsl(0, 0%, 55%);
+      margin-bottom: 3rem;
+      font-size: 1.05rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      max-width: 960px;
+      width: 100%;
+    }
+
+    .card {
+      background: hsl(240, 12%, 8%);
+      border: 1px solid hsl(240, 10%, 14%);
+      border-radius: 12px;
+      padding: 2rem 1.75rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .card:hover {
+      border-color: hsl(152, 76%, 42%);
+      box-shadow: 0 0 24px hsla(152, 76%, 42%, 0.08);
+    }
+
+    .card-name {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: hsl(0, 0%, 95%);
+    }
+
+    .card-desc {
+      font-size: 0.925rem;
+      color: hsl(0, 0%, 55%);
+      line-height: 1.5;
+      flex: 1;
+    }
+
+    .card-link {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: hsl(152, 76%, 42%);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      margin-top: 0.5rem;
+    }
+
+    .card-link svg {
+      transition: transform 0.2s;
+    }
+
+    .card:hover .card-link svg {
+      transform: translateX(3px);
+    }
+
+    @media (max-width: 720px) {
+      .grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>mred-randomprojects</h1>
+  <p class="subtitle">A collection of small tools I built for fun.</p>
+
+  <div class="grid">
+    <a class="card" href="/candito-tool/">
+      <span class="card-name">Candito Tool</span>
+      <span class="card-desc">Training program generator based on Jonnie Candito's linear periodization template.</span>
+      <span class="card-link">
+        Open
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </span>
+    </a>
+
+    <a class="card" href="/lol-guess-champ-class/">
+      <span class="card-name">LoL Guess Champ Class</span>
+      <span class="card-desc">Quiz game — guess the class of a League of Legends champion from their splash art.</span>
+      <span class="card-link">
+        Open
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </span>
+    </a>
+
+    <a class="card" href="/nutriapp/">
+      <span class="card-name">NutriApp</span>
+      <span class="card-desc">Simple nutrition tracker to log meals and keep an eye on daily macros.</span>
+      <span class="card-link">
+        Open
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </span>
+    </a>
+  </div>
+</body>
+</html>
