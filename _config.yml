@@ -1,0 +1,8 @@
+# This repo deploys with GitHub Pages' legacy Jekyll build from main.
+# Keep the repo's notes and scripts off the public site: without this,
+# CLAUDE.md is published at /CLAUDE.md and rendered at /CLAUDE.html.
+# index.html has no front matter, so Jekyll copies it unchanged.
+exclude:
+  - CLAUDE.md
+  - AGENTS.md
+  - deploy.sh
