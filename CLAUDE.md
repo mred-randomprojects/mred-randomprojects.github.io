@@ -40,3 +40,5 @@ browser scopes by origin is a single pool they all share:
 <!-- /mred-randomprojects:shared-origin -->
 
 **In this repo:** This repo **is** the root of the origin (`/`). Never register a service worker here: at `/` it would control every app that has not registered its own. It stores nothing in the browser today; anything it ever stores is readable by every app, and the other way round.
+
+**The project grid:** each card is `<a class="card" href="/<repo>/">`, where `<repo>` is the GitHub repo name (`git remote get-url origin`), not the local clone's folder name. They often differ (`math-journey` is `viaje-matematico`, `lol-guess-champ-class` is `guess-class-lol`), and a folder-name href is a dead link: 6aa647d had to fix one. cuentas, moonfall and terrateniente are left off on purpose. Ask the owner before adding a card, for them or for any new project.
